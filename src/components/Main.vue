@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 
 main{
-    height: 90px;
+    
     .container{
         width: 860px;
         height: 90px;
