@@ -1,12 +1,12 @@
 <template>
   <main>
-      <section>
+      <section class="black">
       <div class="container">
      <div>-->Content goes here>--</div>
       </div>
       </section>
-      <section>
-          <div class="container">
+      <section class="blu">
+          <div class="container-2-main">
             <div class="info-text">
               <div class="icon">
                  <img src="../assets/img/buy-comics-digital-comics.png" alt="">
@@ -51,6 +51,13 @@ export default {
 <style lang="scss" scoped>
 
 main{
+    section.black{
+        background-color: black;
+        color: white;
+    }
+    section.blu{
+        background-color: #0282F9;
+    }
     
     .container{
         width: 860px;
@@ -58,17 +65,22 @@ main{
         margin: 0 auto;
         display: flex;
         align-items: center;
-        background-color: red;
+    }
+    .container-2-main{
+        width: 860px;
+        height: 90px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
     }
 }
 .info-text{
     min-width: 100px;
-    background-color: #008000;
     display: flex;
     align-items: center;
     margin: 20px;
     .icon{
-        width: 35px;
+        width: 33px;
         height: 38px;
         img{
             width: 100%;

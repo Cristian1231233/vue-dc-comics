@@ -64,6 +64,9 @@ header{
                 text-decoration: none;
                 font-size: 11px;
                 padding: 0.3rem;
+                &:hover{
+                    color: #0282F9;
+                }
             }
         }
     }
