@@ -50,34 +50,35 @@ export default {
 
 <style lang="scss" scoped>
 
+@import '../assets/style/vars.scss';
+@import '../assets/style/mixin.scss';
+
+
 main{
     section.black{
         background-color: black;
         color: white;
     }
     section.blu{
-        background-color: #0282F9;
+        background-color: $colore-blu;
     }
     
     .container{
         width: 860px;
         height: 90px;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
+        @include flex(a);
     }
     .container-2-main{
         width: 860px;
         height: 90px;
         margin: 0 auto;
-        display: flex;
-        align-items: center;
+        @include flex(a);
     }
 }
 .info-text{
     min-width: 100px;
-    display: flex;
-    align-items: center;
+    @include flex(a);
     margin: 20px;
     .icon{
         width: 33px;

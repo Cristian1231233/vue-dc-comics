@@ -24,6 +24,9 @@ export default {
 
 <style lang="scss">
 
+@import './assets/style/vars.scss';
+@import './assets/style/mixin.scss';
+
 *{
   margin: 0;
   padding: 0;

@@ -64,7 +64,7 @@
                   <button>SIGN-UP NOW!</button>
                 </div>
                 <div class="socials">
-                    <h1>FOLLOW US</h1>
+                    <h1 class="titolo-social">FOLLOW US</h1>
                    <div class="social">
                        
                        
@@ -104,7 +104,8 @@ export default {
 
 <style lang="scss" scoped>
 
-
+@import '../assets/style/vars.scss';
+@import '../assets/style/mixin.scss';
     
     
     .footer-top{
@@ -114,7 +115,7 @@ export default {
     }
     .footer-button{
         height: 90px;
-        background-color: gray;
+        background-color: #303030;
     }
 
 
@@ -152,33 +153,31 @@ export default {
     width: 860px;
     height: 90px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    @include flex(a);
 }
 
 .button-social{
     width: 100%;
     height: 60px;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(ja);
     button{
         color: white;
-        border: 2px solid blue;
-        background-color: gray;
+        border: 2px solid $colore-blu;
+        background-color: #303030;
         padding: 10px;
     }
     .socials{
-        display: flex;
-        align-items: center;
+        @include flex(a);
+        .titolo-social{
+            font-size: 17px;
+            color: #0886FF;
+        }
         .social{
             height: 30px;
             margin-left: 10px;
             
             img{
                 height: 100%;
-                
             }
         }
     }
