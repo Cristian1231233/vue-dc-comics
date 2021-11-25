@@ -22,17 +22,19 @@ export default {
 
 .creat-card{
     width: calc(100% / 6);
-    
-    
-    background-color: aqua;
+    margin-top: 1rem;
     .immage{
-        background-color: green;
         width: 130px;
         height: 130px;
         img{
             width: 100%;
             height: 100%;
         }
+    }
+    h3{
+        font-size: 16px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }
 

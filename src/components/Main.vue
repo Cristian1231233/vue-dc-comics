@@ -1,6 +1,7 @@
 <template>
   <main>
       <section class="black">
+          <button class="carica move">CURRENT SERIES</button>
           <section class="jumbotron">
           </section>
           <section class="main-buttom">
@@ -9,17 +10,9 @@
                  :propImg="serie.thumb" 
                  :propTitle="serie.series"
                  />
-                 <!-- <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard />
-                 <productCard /> -->
+                <div class="Load">
+                    <button class="carica">Load more</button>
+                </div>
                  
                  
            </div>
@@ -160,19 +153,27 @@ export default {
 
 main{
     section.black{
-        background-color: black;
         color: white;
+        background-color: black;
+        position: relative;
+        .move{
+            position: absolute;
+            top: 284px;
+            left: 220px;
+            height: 30px;
+        }
     }
     section.jumbotron{
         height: 300px;
         background-image: url('../assets/img/jumbotron.jpg');
         background-size: 1500px;
+        
     }
     section.blu{
         background-color: $colore-blu;
     }
     section.main-buttom{
-        background-color: gray;
+        background-color: #1C1C1C;
         
     }
     
@@ -183,6 +184,11 @@ main{
         padding: 10px;
         display: flex;
         flex-wrap: wrap;
+        .Load{
+            width: 100%;
+            text-align: center;
+            
+        }
     }
     .container-2-main{
         width: 860px;
@@ -190,6 +196,13 @@ main{
         margin: 0 auto;
         @include flex(a);
     }
+}
+.carica{
+      width: 150px;
+      height: 20px;
+      color: white;
+      background-color: $colore-blu;
+      border: none;
 }
 .info-text{
     min-width: 100px;
