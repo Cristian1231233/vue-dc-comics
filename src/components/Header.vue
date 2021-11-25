@@ -8,7 +8,10 @@
           <nav>
               <ul>
                   <li v-for="(item, index) in links" :key="index"
-                  ><a :href="item.url"><strong>{{item.text}}</strong></a></li>
+                  ><a :class="{active: item.current}" :href="item.url"><strong>{{item.text}}</strong>
+                  </a>
+                  <div class="line"></div>
+                  </li>
               </ul>
           </nav>
       </div>
@@ -21,56 +24,57 @@ export default {
     nome: 'Header',
     data(){
         return{
+           
             links:[
                 {
                     url: '/',
                     text: 'CHARACTERS',
-                    current: 'true'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'COMIX',
-                    current: 'false'
+                    current: true
                 },
                 {
                     url: '/',
                     text: 'MOVIES',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'TV',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'GAMES',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'COLLECTIBLES',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'VIDEOS',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'FANS',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'NEWS',
-                    current: 'false'
+                    current: false
                 },
                 {
                     url: '/',
                     text: 'SHOP',
-                    current: 'false'
+                    current: false
                 }
 
 
@@ -104,15 +108,26 @@ header{
             }
         }
     }
+    
+    .active{
+        color: $colore-blu;
+    }
     nav ul{
         display: flex;
         li{
             list-style: none;
+            height: 90px;
+            line-height: 90px;
+           
+            
+            
             a{
                 color: black;
                 text-decoration: none;
                 font-size: 11px;
                 padding: 0.3rem;
+                width: 100%;
+                height: 100%;
                 &:hover{
                     color: $colore-blu;
                 }

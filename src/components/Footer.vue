@@ -2,6 +2,7 @@
   <footer>
       <section class="footer-top">
        <div class="container">
+           
            <div class="informative">
            <h2>DC COMIX</h2>
            <ul>
@@ -53,6 +54,9 @@
                <li><a href="#">Characters</a></li>
                <li><a href="#">Characters</a></li>
            </ul>
+           </div>
+           <div class="logo-big">
+               <img src="../assets/img/dc-logo.png" alt="">
            </div>
             
        </div>
@@ -111,7 +115,7 @@ export default {
     .footer-top{
         
         background-image: url('../assets/img/footer-bg.jpg');
-       
+        overflow: hidden;
     }
     .footer-button{
         height: 90px;
@@ -124,6 +128,15 @@ export default {
     margin: 0 auto;
     display: flex;
     padding-bottom: 30px;
+
+    .logo-big{
+        
+        height: 300px;
+        margin-left: 260px;
+        img{
+            height: 125%;
+        }
+    }
 
     .informative{
         margin-top: 30px;

@@ -170,6 +170,7 @@ main{
         
     }
     section.blu{
+        color: rgba(248, 228, 228, 0.966);
         background-color: $colore-blu;
     }
     section.main-buttom{
